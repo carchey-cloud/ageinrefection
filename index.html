@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adrienne | Cosmetology | Age In Reflection</title>
+  <meta name="description" content="Cosmetology services by Adrienne at Age In Reflection." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0f172a;
+      --panel2:#0b1020;
+      --text:#e5e7eb;
+      --muted:#a3a3a3;
+      --brand:#fbbf24;
+      --brand2:#60a5fa;
+      --card:#111c33;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1100px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(96,165,250,.22), transparent 55%),
+        radial-gradient(1200px 700px at 85% 10%, rgba(251,191,36,.18), transparent 55%),
+        linear-gradient(180deg, var(--bg), #070b14 60%, #050812);
+      color:var(--text);
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ text-decoration:underline; text-underline-offset:4px; }
+
+    .container{ width:min(var(--max), calc(100% - 40px)); margin:0 auto; }
+
+    .skip-link{
+      position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip-link:focus{
+      left:16px; top:16px; width:auto; height:auto; padding:10px 14px;
+      background:#111; border:1px solid var(--border); border-radius:10px; z-index:9999;
+    }
+
+    /* Finished the rule that got cut off */
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.75);
+      border-bottom:1px solid var(--border);
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px 0;
+      gap:12px;
+    }
+
+    .logo{
+      font-weight:800;
+      letter-spacing:.4px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      white-space:nowrap;
+    }
+
+    .logo-badge{
+      width:34px; height:34px;
+      border-radius:12px;
+      background: linear-gradient(135deg, rgba(251,191,36,.95), rgba(96,165,250,.85));
+      box-shadow: var(--shadow);
+      display:inline-grid;
+      place-items:center;
+      color:#050812;
+      font-weight:900;
+    }
+
+    .navlinks{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(15,23,42,.7);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary{
+      border:none;
+      color:#050812;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      font-weight:800;
+    }
+
+    .hero{
+      padding:70px 0 40px;
+      text-align:center;
+    }
+
+    .hero h1{
+      margin:0 0 12px;
+      font-size:clamp(34px, 5.6vw, 58px);
+      letter-spacing:-.02em;
+    }
+
+    .hero p{
+      margin:0 auto 22px;
+      max-width:760px;
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.7;
+    }
+
+    .pillrow{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .pill{
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(15,23,42,.55);
+      color:#cbd5e1;
+      font-size:13px;
+    }
+
+    section{ padding:48px 0; }
+    h2{
+      margin:0 0 26px;
+      text-align:center;
+      font-size:32px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap:18px;
+    }
+
+    .card{
+      background: rgba(17,28,51,.92);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding:20px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3{
+      margin:0 0 8px;
+      font-size:18px;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:start;
+    }
+
+    .muted{ color:var(--muted); }
+
+    .footer{
+      padding:28px 0 44px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
+    }
+
+    @media (max-width: 820px){
+      .two-col{ grid-template-columns: 1fr; }
+      .nav{ align-items:flex-start; }
+      .navlinks{ justify-content:flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-badge">AR</span>
+        <span>Age In Reflection</span>
+      </div>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-primary">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>Adrienne — Cosmetology</h1>
+      <p>
+        A calm, confidence-boosting experience built around healthy hair, great style, and feeling like yourself again.
+        Book an appointment or request a consultation.
+      </p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="#contact">Book an Appointment</a>
+        <a class="btn" href="#services">See Services</a>
+      </div>
+
+      <div class="pillrow" aria-label="Highlights">
+        <span class="pill">Cuts & styling</span>
+        <span class="pill">Color & highlights</span>
+        <span class="pill">Special occasions</span>
+        <span class="pill">Consultations</span>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Haircuts & Styling</h3>
+          <p>Precision cuts and styling tailored to your hair type, face shape, and daily routine.</p>
+        </div>
+        <div class="card">
+          <h3>Color & Highlights</h3>
+          <p>Dimensional color, highlights, gray blending, and careful corrective work.</p>
+        </div>
+        <div class="card">
+          <h3>Event Styling</h3>
+          <p>Blowouts, waves, updos, and special-occasion looks for photos and big days.</p>
+        </div>
+      </div>
+      <p class="muted" style="text-align:center; margin-top:14px;">
+        Pricing varies by hair length/thickness and service time. Ask for a quick estimate when booking.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Adrienne</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>What you can expect</h3>
+          <p>
+            Adrienne takes a personal approach—listening first, then recommending what fits your goals.
+            Every appointment is built around comfort, communication, and results you can maintain.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Signature focus</h3>
+          <p>
+            Healthy-hair habits • Natural-looking color • Confidence-first styling • Honest recommendations
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Book & Contact</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Appointments</h3>
+          <p>
+            Replace these placeholders with Adrienne’s real details:<br><br>
+            📞 Call/Text: <strong>(555) 123-4567</strong><br>
+            ✉️ Email: <strong>hello@ageinreflection.com</strong><br>
+            📍 Location: <strong>Your city / studio name</strong>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Booking link</h3>
+          <p>
+            If you use Square, Vagaro, GlossGenius, Calendly, etc., paste the link here and I’ll wire the button to it.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Age In Reflection • All rights reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
