@@ -3,187 +3,349 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adrienne | Crave Beauty Academy | Age In Reflection</title>
-  <meta name="description" content="Cosmetology by Adrienne at Age In Reflection." />
+  <title>Age In Reflection | AGE (Adrienne) • Cosmetology</title>
+  <meta name="description" content="Age In Reflection — cosmetology by AGE (Adrienne). A gothic, Wonderland-inspired beauty brand grounded in reflection of self. St. Louis, MO." />
+  <meta name="theme-color" content="#05050a" />
 
-  <style>
-    :root{
-      --bg:#0b1220;
-      --panel:#0f172a;
-      --panel2:#0b1020;
-      --text:#e5e7eb;
-      --muted:#a3a3a3;
-      --brand:#fbbf24;
-      --brand2:#60a5fa;
-      --card:#111c33;
-      --border:rgba(255,255,255,.12);
-      --shadow: 0 18px 60px rgba(0,0,0,.35);
-      --radius:18px;
-      --max:1100px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  <meta property="og:title" content="Age In Reflection | AGE (Adrienne) • Cosmetology" />
+  <meta property="og:description" content="A gothic, Wonderland-inspired beauty brand grounded in reflection of self. Book by text or email." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ageinreflection.com" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Age In Reflection",
+    "url": "https://ageinreflection.com",
+    "description": "Cosmetology by AGE (Adrienne). A gothic, Wonderland-inspired beauty brand grounded in reflection of self.",
+    "telephone": "+13149715785",
+    "email": "adrienne@ageinreflection.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "St. Louis",
+      "addressRegion": "MO",
+      "addressCountry": "US"
     }
-
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
-
-    body{
-      margin:0;
-      font-family:var(--font);
-      background:
-        radial-gradient(1200px 600px at 20% 0%, rgba(96,165,250,.22), transparent 55%),
-        radial-gradient(1200px 700px at 85% 10%, rgba(251,191,36,.18), transparent 55%),
-        linear-gradient(180deg, var(--bg), #070b14 60%, #050812);
-      color:var(--text);
-    }
-
-    a{ color:inherit; text-decoration:none; }
-
-    .container{ width:min(var(--max), calc(100% - 40px)); margin:0 auto; }
-
-    .site-header{
-      position:sticky;
-      top:0;
-      z-index:10;
-      backdrop-filter: blur(10px);
-      background: rgba(11,18,32,.75);
-      border-bottom:1px solid var(--border);
-    }
-
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 0;
-      gap:12px;
-    }
-
-    /* LOGO AREA */
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:800;
-      letter-spacing:.4px;
-      white-space:nowrap;
-    }
-
-    .logo-image{
-      width:42px;
-      height:42px;
-      object-fit:cover;
-      border-radius:16px; /* mirror-like frame */
-      box-shadow: 0 8px 26px rgba(0,0,0,.5);
-      border:1px solid rgba(255,255,255,.25);
-    }
-
-    .navlinks{
-      display:flex;
-      gap:16px;
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    .btn{
-      padding:12px 18px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background: rgba(15,23,42,.7);
-      box-shadow: var(--shadow);
-    }
-
-    .btn-primary{
-      border:none;
-      color:#050812;
-      background: linear-gradient(135deg, var(--brand), var(--brand2));
-      font-weight:800;
-    }
-
-    .hero{
-      padding:70px 0 40px;
-      text-align:center;
-    }
-
-    .hero h1{
-      font-size:clamp(34px, 5.6vw, 58px);
-      margin-bottom:12px;
-    }
-
-    .hero p{
-      max-width:760px;
-      margin:0 auto 22px;
-      color:var(--muted);
-      font-size:18px;
-      line-height:1.7;
-    }
-
-    section{ padding:48px 0; }
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap:18px;
-    }
-
-    .card{
-      background: rgba(17,28,51,.92);
-      border:1px solid var(--border);
-      border-radius: var(--radius);
-      padding:20px;
-      box-shadow: var(--shadow);
-    }
-
-    .footer{
-      padding:28px 0 44px;
-      border-top:1px solid var(--border);
-      color:var(--muted);
-      font-size:14px;
-      text-align:center;
-    }
-  </style>
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container nav">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🪞</div>
+        <div class="brand-text">
+          <span class="brand-name">Age In Reflection</span>
+          <span class="brand-tag">“Beauty in the Looking Glass.”</span>
+        </div>
+      </div>
 
-    <!-- LOGO WITH IMAGE -->
-    <div class="logo">
-      <img src="alice-reflections.jpg" alt="Age In Reflection logo" class="logo-image">
-      <span>Age In Reflection</span>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn btn-small">Book / Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <nav class="navlinks">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="btn btn-primary">Book</a>
-    </nav>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">A little dark. A little dreamy. Completely you.</p>
+          <h1>Cosmetology by <span class="accent">AGE</span></h1>
+          <p class="sub">
+            <strong>Adrienne</strong> — building a gothic, Wonderland-inspired beauty brand rooted in one idea:
+            <em>your look should reflect your true self.</em>
+          </p>
 
-  </div>
-</header>
+          <div class="hero-cta">
+            <a class="btn" href="sms:+13149715785">Text to book</a>
+            <a class="btn btn-ghost" href="#services">Explore services</a>
+          </div>
 
-<main class="container">
+          <ul class="trust">
+            <li>🪞 Reflection-first consultations</li>
+            <li>🖤 Alternative / goth-friendly styling</li>
+            <li>♠︎ Training at Crave Beauty Academy — St. Louis</li>
+          </ul>
 
-  <section class="hero">
-    <h1>Adrienne — Cosmetology</h1>
-    <p>
-      A calm, confidence-restoring experience centered on healthy hair,
-      elevated style, and rediscovering yourself.
-    </p>
-    <a class="btn btn-primary" href="#contact">Book an Appointment</a>
-  </section>
+          <div class="mini-contact">
+            <a class="pill" href="tel:+13149715785">(314) 971-5785</a>
+            <a class="pill" href="mailto:adrienne@ageinreflection.com">adrienne@ageinreflection.com</a>
+          </div>
+        </div>
 
-</main>
+        <div class="hero-card" role="img" aria-label="A dark reflective brand panel with gothic details">
+          <div class="hero-card-inner">
+            <p class="hero-card-title">Now booking</p>
+            <p class="hero-card-line">Text: <a class="inline-link" href="tel:+13149715785">(314) 971-5785</a></p>
+            <p class="hero-card-line">Email: <a class="inline-link" href="mailto:adrienne@ageinreflection.com">adrienne@ageinreflection.com</a></p>
+            <div class="hero-card-divider"></div>
+            <p class="hero-card-small">
+              This site is her long-term brand home — it follows AGE beyond graduation.
+              Add portfolio photos + socials anytime.
+            </p>
 
-<footer class="footer">
-  © <span id="year"></span> Age In Reflection • All rights reserved
-</footer>
+            <div class="sig">
+              <span aria-hidden="true">♠︎</span>
+              <span>“We’re all mad here — in the best way.”</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>
+            Customize this list as offerings evolve. Use “From” pricing now, then tighten pricing after graduation.
+          </p>
+        </div>
 
+        <div class="cards">
+          <article class="card">
+            <h3>Cut & Style</h3>
+            <p class="muted">Shaping, texture, and a finish that matches your daily life.</p>
+            <ul class="bullets">
+              <li>Consultation</li>
+              <li>Wash + cut</li>
+              <li>Blowout / style</li>
+            </ul>
+            <p class="price">From $XX</p>
+          </article>
+
+          <article class="card">
+            <h3>Color</h3>
+            <p class="muted">Refresh, deepen, soften, or shift — planned with hair health in mind.</p>
+            <ul class="bullets">
+              <li>All-over color</li>
+              <li>Gloss / toner</li>
+              <li>Root touch-up</li>
+            </ul>
+            <p class="price">From $XX</p>
+          </article>
+
+          <article class="card">
+            <h3>Highlights / Balayage</h3>
+            <p class="muted">Lived-in dimension or bold contrast — subtle to striking.</p>
+            <ul class="bullets">
+              <li>Partial / full</li>
+              <li>Face framing</li>
+              <li>Maintenance plan</li>
+            </ul>
+            <p class="price">From $XX</p>
+          </article>
+
+          <article class="card">
+            <h3>Treatments</h3>
+            <p class="muted">Repair, hydration, scalp care, shine — the “mirror polish.”</p>
+            <ul class="bullets">
+              <li>Deep conditioning</li>
+              <li>Bond building</li>
+              <li>Scalp refresh</li>
+            </ul>
+            <p class="price">From $XX</p>
+          </article>
+
+          <article class="card">
+            <h3>Alternative / Creative Look</h3>
+            <p class="muted">Goth edge, dramatic contrast, bold texture — tailored to your vibe.</p>
+            <ul class="bullets">
+              <li>Consultation-heavy</li>
+              <li>Inspo + plan</li>
+              <li>Wearable results</li>
+            </ul>
+            <p class="price">Quote</p>
+          </article>
+
+          <article class="card">
+            <h3>Consultation</h3>
+            <p class="muted">Not sure what you want? Start here. Let’s reflect + design it.</p>
+            <ul class="bullets">
+              <li>Hair history</li>
+              <li>Goal setting</li>
+              <li>Service roadmap</li>
+            </ul>
+            <p class="price">From $XX</p>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Note:</strong> Final pricing can vary by length/thickness and service complexity.
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About AGE</h2>
+          <p>
+            <strong>AGE</strong> is Adrienne’s creative identity — inspired by mirrors, transformation,
+            and the idea that beauty is personal.
+          </p>
+          <p>
+            The vibe: gothic elegance with a Wonderland twist — clean structure, intentional contrast,
+            and details that feel like you stepped out of your own story.
+          </p>
+
+          <div class="about-badges">
+            <span class="badge">🪞 Reflection of self</span>
+            <span class="badge">🖤 Alternative-friendly</span>
+            <span class="badge">♠︎ Wonderland mood</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <p class="muted">
+            Current location: <strong>Crave Beauty Academy</strong> (St. Louis). This brand and website will follow
+            Adrienne through graduation and beyond.
+          </p>
+        </div>
+
+        <aside class="about-panel">
+          <h3>What to expect</h3>
+          <ol class="steps">
+            <li><strong>Reflect:</strong> goals + inspiration + hair history</li>
+            <li><strong>Create:</strong> a plan that fits your lifestyle (and your darkness)</li>
+            <li><strong>Reveal:</strong> a look you can maintain and love</li>
+          </ol>
+
+          <div class="panel-cta">
+            <a class="btn btn-small" href="sms:+13149715785">Text AGE</a>
+            <a class="btn btn-small btn-ghost" href="mailto:adrienne@ageinreflection.com">Email</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Gallery</h2>
+          <p>
+            Replace these placeholders with portfolio images in <code>/assets</code> whenever you’re ready.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <div class="ph" aria-label="Placeholder image 1"></div>
+          <div class="ph" aria-label="Placeholder image 2"></div>
+          <div class="ph" aria-label="Placeholder image 3"></div>
+          <div class="ph" aria-label="Placeholder image 4"></div>
+          <div class="ph" aria-label="Placeholder image 5"></div>
+          <div class="ph" aria-label="Placeholder image 6"></div>
+        </div>
+
+        <p class="muted small">
+          Tip: export JPG/WebP ~1500px wide and keep each under ~300–500KB for fast loading.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Book / Contact</h2>
+          <p>
+            Fastest booking: text AGE. If you prefer, email works too.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn" href="sms:+13149715785">Text (314) 971-5785</a>
+            <a class="btn btn-ghost" href="mailto:adrienne@ageinreflection.com">adrienne@ageinreflection.com</a>
+          </div>
+
+          <div class="contact-details">
+            <p><strong>Location:</strong> Crave Beauty Academy — St. Louis, MO</p>
+            <p class="muted small">
+              Include: desired service, hair history (color/chemical services), and 1–2 inspiration photos.
+            </p>
+
+            <div class="contact-card">
+              <p class="contact-card-title">Message template</p>
+              <p class="muted small">
+                “Hi AGE — I’m interested in _____. My hair history is _____. My goal is _____.
+                I’m available _____.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required value=""/>
+          </label>
+
+          <label>
+            What are you looking for?
+            <select name="service" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Cut & Style</option>
+              <option>Color</option>
+              <option>Highlights / Balayage</option>
+              <option>Treatments</option>
+              <option>Alternative / Creative Look</option>
+              <option>Consultation</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" required placeholder="Your goal + hair history + timing."></textarea>
+          </label>
+
+          <button class="btn" type="submit">Generate a text message</button>
+          <p class="muted small" id="formNote" role="status" aria-live="polite"></p>
+
+          <p class="muted small">
+            Or just text directly: <a class="inline-link" href="sms:+13149715785">+1 (314) 971-5785</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Age In Reflection • AGE (Adrienne)</p>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
